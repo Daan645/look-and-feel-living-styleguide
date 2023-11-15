@@ -52,7 +52,13 @@ section {
   background: white;
   border-radius: 0.2rem;
   padding: 0.2rem;
+  max-width: 1000px;
 }
+
+img{
+  max-width: 950px;
+}
+
 section + section {
   margin-top: 1rem;
 }
