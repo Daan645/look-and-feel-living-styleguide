@@ -1,16 +1,16 @@
 * {
   box-sizing: border-box;
-  margin: 0;
+  margin: 0 auto ;
   padding: 0;
 }
 
 :root {
-  font-size: min(calc(1em + 1vw), 4em);
+  font-size: min(calc(0.3em + 1vw), 4em);
 }
 
 body {
   min-height: 100vh;
-
+  margin: 0 auto ;
   font-family: sans-serif;
   text-rendering: optimizeLegibility;
   font-feature-settings: 'kern' 1, 'liga' on, 'dlig' on;
@@ -32,7 +32,7 @@ header {
 
 header > h1 {
   font-size: 1rem;
-  text-align: right;
+  text-align: center;
 }
 
 nav li {
@@ -56,11 +56,12 @@ section {
 }
 
 img{
-  max-width: 950px;
+  max-width: 100%;
 }
 
 section + section {
   margin-top: 1rem;
+  max-width: 950px;
 }
 
 h3 {
