@@ -47,7 +47,40 @@ nav a.active {
   font-weight: bold;
 }
 
-section {
+main{
+    display: flex;
+}
+
+.chapters{
+  height: fit-content;
+  width: fit-content;
+  background-color: white;
+  border-radius: 0.2rem;
+  position: fixed;
+  padding: 20px;
+  text-align: center;
+  
+}
+
+.chapters ul{
+  list-style-type: none;
+}
+
+.chapters ul a{
+  text-decoration: none;
+  color: black;
+}
+
+.chapters ul a:hover{
+  text-decoration: none;
+  color: cyan;
+}
+
+.chapters ul h2{
+  color: springgreen;
+}
+
+.styleguides{
   width: min(100%, 38rem);
   background: white;
   border-radius: 0.2rem;
@@ -55,22 +88,28 @@ section {
   max-width: 1000px;
 }
 
+code{
+  font-size: 24px;
+}
+
+
 img{
   max-width: 100%;
 }
 
 section + section {
-  margin-top: 1rem;
   max-width: 950px;
 }
 
 h3 {
   border-bottom: DarkSlateGray 1px solid;
-  margin-bottom: 1rem;
+  margin: 1rem 0 1rem 0;
+  text-align: center;
 }
 
 pre {
   padding-left: 0.2rem;
   background: DarkSlateGray;
   color: white;
+  font-size: 24px;
 }
