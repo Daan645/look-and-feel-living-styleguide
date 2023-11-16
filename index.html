@@ -1,498 +1,304 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <title>[Projectnaam] living styleguide</title>
-    <link rel="stylesheet" href="style.css" />
-  </head>
-  <body>
-    <header>
-      <h1>[b-RAIN] styleguide v0.1</h1>
-    </header>
+    <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+<header>
+    <h1>[b-RAIN] styleguide v0.1</h1>
+</header>
 
-  
-    <main>
-      <section class="chapters">
+
+<main>
+    <section class="chapters">
         <ul>
-          <h2>chapters</h2>
-          <li>
-            <a href="">header</a>
-          </li>
-          <li>
-            <a href="">hero</a>
-          </li>
-          <li>
-            <a href="">tijdlijn</a>
-          </li>
-          <li>
-            <a href="">article</a>
-          </li>
-          <li>
-            <a href="">footer</a>
-          </li>
+            <h2>chapters</h2>
+            <li>
+                <a href="">header</a>
+            </li>
+            <li>
+                <a href="">hero</a>
+            </li>
+            <li>
+                <a href="">tijdlijn</a>
+            </li>
+            <li>
+                <a href="">article</a>
+            </li>
+            <li>
+                <a href="">footer</a>
+            </li>
         </ul>
-      </section>
-      <!-- styleguides -->
-      <section class="styleguides">
-         <!-- header explaining  -->
-      <section>
-        <h3>Header</h3>
-        <img src="assets/images/Schermafbeelding 2023-11-15 om 10.54.44.png" alt="screenshot van header" />
+    </section>
+    <!-- styleguides -->
+    <section class="styleguides">
+        <!-- header explaining  -->
+        <section>
+            <h3>Kleuren</h3>
+            <img src="assets/images/kleurenpaletberain.png" alt="screenshot van header"/>
 
-        <h4>Wel doen</h4>
-        <p>Wolken aanmaken met divs, en goed kijken naar responsive.
-          Ook kijken dat de kleuren overheen komen met de website.  <br>
-          Kijk naar de hovers en animaties, zorg dat deze gelijk staan.
-        </p>
+            <h4>Wel doen</h4>
+            <p><strong>Groen</strong> wordt voor koppen gebruikt die interactieve doeleinden hebben zoals contact
+                formulieren ook wordt deze gebruikt voor teksten bij interactieve formulieren of belangrijke kopjes
+                waarmee je de gebruiker tot een actie wilt aansporen.</br></br>
+                <strong>Blauw</strong> wordt gebruikt voor subkoppen (h3) maar ook voor knoppen die minder hoeven
+                opvallen zoals "lees verder".</br></br>
+                <strong>Donkerblauw</strong> wordt gebruikt voor grote koppen H2 waarbij niet perse een interactie bij
+                is vereist of die niet tot actie aanroepen.
+            </p>
 
-        <h4>Niet doen</h4>
-        <p>Niet de css aanpassen van de header zelf: stikcy position, z index. <br>
-        </p>
+            <h4>Niet doen</h4>
+            <p>Niet de koppen structuur van de kleuren omdraaien dit zorgt voor verwarring<br>
+            </p>
 
-        <!-- Om HTML in HTML te laten zien gebruik je &lt; voor de < en &gt; voor de > -->
-        <pre>
-          <pre>
-            &lt;header&gt;
-                &lt;section class="header_full"&gt;
-                    &lt;div class="cloud c1"&gt;&lt;/div&gt;
-                    &lt;div class="cloud c2"&gt;&lt;/div&gt;
-                    &lt;div class="cloud c3"&gt;&lt;/div&gt;
-                    &lt;div class="cloud c4"&gt;&lt;/div&gt;
-                    &lt;h1&gt; b-RAIN &lt;/h1&gt;
-                    &lt;nav class="hidden"&gt;
-                        &lt;ul&gt;
-                            &lt;li&gt;
-                                &lt;a href="#"&gt; Home &lt;/a&gt;
-                            &lt;/li&gt;
-                            &lt;li&gt;
-                                &lt;a href="#"&gt; Artikelen&lt;/a&gt;
-                            &lt;/li&gt;
-                            &lt;li&gt;
-                                &lt;a href="#"&gt; Over ons&lt;/a&gt;
-                            &lt;/li&gt;
-                            &lt;li&gt;
-                                &lt;a href="#"&gt; Contact&lt;/a&gt;
-                            &lt;/li&gt;
-                        &lt;/ul&gt;
-                    &lt;/nav&gt;
-                    &lt;button class="hamburger"&gt; &equiv;&lt;/button&gt;
-                &lt;/section&gt;
-            &lt;/header&gt;
+            <!-- Om HTML in HTML te laten zien gebruik je &lt; voor de < en &gt; voor de > -->
+            <pre>
+
+"Alle kleuren in de root"
+            root{
+            --blue: #7FAEC5;
+
+          --darkblue: #384B61;
+
+          --green: #4ECD5D;
+            }
+
+"hoe je een kleur toepast"
+color: var(--naam van kleur);
+
                 </pre>
-          
-          <code>&lt;header styling&gt;s
-              &lt;/header&gt;
-              
-              header{
+        </section>
+        <!-- end of header explaining  -->
 
-                background-color: var(--white);
-              
-                position: sticky;
-              
-                top: 0;
-              
-                z-index: 99;
-              
-                box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-              
-              }
-              
-              .header_full{
-              
-                margin: 0 auto;
-              
-                padding: 2em 1em;
-              
-                max-width: 1232px;
-              
-                display: flex;
-              
-                flex-direction: row;
-              
-                justify-content: space-between;
-              
-                align-items: center;
-              
-                gap: 6em;
-              
-              }
-              
+        <!-- hero explaining  -->
+        <section>
+            <h3>Logo</h3>
+            <img src="assets/images/logo_spatwater.png" alt="logo spatwater"/>
+
+            <h4>Wel doen</h4>
+            <p>Het <strong>logo</strong> van spatwater wordt subtiel verwerkt in de website het liefst in de footer en
+                zo klein mogelijk omdat spat water wilt dat er gezien wordt dat be-rain van hun is. Be-rain heeft zelf
+                geen logo daar wordt tekst voor gebruikt. <br>
+            </p>
+
+            <h4>Niet doen</h4>
+            <p>Niet het <strong>logo</strong> te groot maken en te vaak laten terug komen max 1x per pagina.</p>
+
+            <!-- Om HTML in HTML te laten zien gebruik je &lt; voor de < en &gt; voor de > -->
+            <pre><code>&ltimg src="assets/images/logo_spatwater.png" alt="logo spatwater"/&gt;
           </code></pre>
-      </section>
-      <!-- end of header explaining  -->
+        </section>
+        <!-- end of hero explaining  -->
 
-       <!-- hero explaining  -->
-       <section>
-        <h3>Hero</h3>
-        <img src="assets/images/Schermafbeelding 2023-11-15 110429.png" alt="screenshot van header" />
+        <!-- timeline explaining  -->
+        <section>
+            <h3>Buttons</h3>
 
-        <h4>Wel doen</h4>
-        <p>images naast de tekst balk zetten en ze responsive maken <br>
-          Zorg dat je voor desktop de goeie aantal rows en columns gebruikt en voor mobile alles netjes onder elkaar staan
-        </p>
+            <img src="assets/images/contact.png" alt="contact"/>
+            <h4>Contact knop</h4>
+            <p>De <strong>contact knop</strong> alle contact knoppen worden de kleur groen en hebben een border radius.
+                De kleur groen is gekozen omdat deze knoppen het belangrijkste doel hebben van de website namelijk dat
+                de klant contact opneemt. Door de kleur is deze knop het meest opvallend.
+            </p>
+            <img src="assets/images/leesverder.png" alt="screenshot van header"/>
+            <h4>Lees verder knop</h4>
+            <p>
+                De lees verder knop heeft een border radius en is donkerblauw. De kleur is gekozen omdat deze knop het
+                minst de aandacht hoeft te trekken want de lezer van de tekst komt uiteindelijk beneden bij de knop uit.
+            </p>
+            <img src="assets/images/send.png" alt="screenshot van header"/>
+            <h4>Send knop</h4>
+            <p>
+                De Send knop heeft een lichtblauwe kleur en geen borderaduis, zodat deze iets meer opvalt maar niet het
+                oog afhaalt van de contact knop
+            </p>
 
-        <h4>Niet doen</h4>
-        <p>bij heros met tekst balken is het belangrijk om grid te gebruiken dus niet flex</p>
 
-        <!-- Om HTML in HTML te laten zien gebruik je &lt; voor de < en &gt; voor de > -->
-        <pre><code>&lt;section class="general"&gt;   
-          &lt;h2&gt;Welkom bij Be-RAIN&lt;/h2&gt;
-          &lt;h3&gt;De Toekomst van water&lt;/h3&gt;
-          &lt;section class="generaltext"&gt;
-             &lt;div&gt;
-                &lt;p&gt;
-                &lt;p id="line"&gt;-&lt;/p&gt;
-                &lt;/p&gt;
-                &lt;p id="moreWelcome"&gt;  
-                &lt;/p&gt;
-             &Lt;/div&gt;   
-             &lt;div&gt;
-                &lt;button id="more" class="readmore" <br>onclick="leesmeer1()"&gt;lees verder&lt;/button&gt;
-             &lt;/div&gt;         
-          &lt;/section&gt;
-       &lt;/section&gt;
-       &lt;img src="assets/img/app.png"&gt;
-
-       |CSS|
-
-       .articleparent{
-        grid-template-columns: 1fr 1fr 1fr 1fr;
-        grid-template-rows: 1fr 1fr;
-        display: grid;
-        gap: 4em;
-        padding: 0px 60px;
-      
-      }
-          </code></pre>
-      </section>
-      <!-- end of hero explaining  -->
-
-      <!-- timeline explaining  -->
-      <section>
-        <h3>Tijdlijn</h3>
-        <img src="assets/images/Schermafbeelding 2023-11-15 om 10.54.44.png" alt="screenshot van header" />
-
-        <h4>Wel doen</h4>
-        <p>Een container maken die de tijdlijn met de rest van de site onderscheidt zodat de focus op de tijdlijn ligt.
-          alle elementen in verschillende divs doen zodat deze appart aangepast kunnen worden.
-        </p>
-
-        <h4>Niet doen
-        </h4>
-        <p>niet te klein maken de focus moet op de tijlijn liggen</p>
-
-        <!-- Om HTML in HTML te laten zien gebruik je &lt; voor de < en &gt; voor de > -->
-        <pre><code>&lt;tijdlijn&gt;
-          &lt;h1&gt;Zo maak je een tijdlijn&lt;/h1&gt;
-        &lt;/tijdlijn&gt;
-
-        &lt;section class="wrapper"&gt;
-        &lt;div class="timelinebox"&gt;
-            &lt;section class="timeline"&gt;
-                &lt;!--Timeline--&gt;
-                &lt;section class="timelinecontainer left"&gt;
-                    &lt;section class="content"&gt;
-                        &lt;h2&gt;Slimme Technologie&lt;/h2&gt;
-                        &lt;p&gt;b-RAIN is de manier om zo optimaal <br> mogelijk om te gaan met de <br> neerslag rondom je huis. Met slimme technologie,<br> gebaseerd op weersvoorspellingen<br>, regelt ons product automatisch de hoeveelheid water in de <br>regenton, zodat je altijd het meeste uit je waterreservoir<br> haalt zonder er tijd aan kwijt te zijn.&lt;/p&gt;
-                        &lt;a href=""&gt;
-                            &lt;button class="secondary"&gt; <br>Contact&lt;/button&gt;
-                        &lt;/a&gt;
-                    &lt;/section&gt;
-                &lt;/section&gt;
-                &lt;section class="timelinecontainer right"&gt;
-                    &lt;section class="content"&gt;
-                        &lt;h2&gt;Regenton&lt;/h2&gt;
-                        &lt;p&gt;tekst&lt;/p&gt;
-                        &lt;a href=""&gt;
-                            &lt;button class="secondary"&gt; <br>Contact&lt;/button&gt;
-                        &lt;/a&gt;
-                    &lt;/section&gt;
-                &lt;/section&gt;
-                &lt;section class="timelinecontainer left"&gt;
-                    &lt;section class="content"&gt;
-                        &lt;h2&gt;Droogte&lt;/h2&gt;
-                        &lt;p&gt;Tekst&lt;/p&gt;
-                        &lt;a href=""&gt;
-                            &lt;button class="secondary"&gt;<br>Contact&lt;/button&gt;
-                        &lt;/a&gt;
-                    &lt;/section&gt;
-                &lt;/section&gt;
-            &lt;/section&gt;
-        &lt;/div&gt;
-    &lt;/section&gt;
+            <!-- Om HTML in HTML te laten zien gebruik je &lt; voor de < en &gt; voor de > -->
+            <pre><code>Contact knop:
+            &lt;button class="secondary"&gt;Contact&lt;/button&gt;</br>Lees verder knop:</br>&lt;button id="more" class="readmore" onclick="leesmeer1()"&gt;lees verder&lt;/button&gt;</br>
+                Send knop</br>&lt;input type="submit" value="Send" name=""&gt;
         </pre>
 
-        .wrapper {
+            Contact knop:
+            .secondary {
 
-   margin: 2em 1em;
+            background-color:var(--green);
+
+            color: white;
+
+            font-weight: 900;
+
+            border-radius: 10px;
+
+            border: 0;
+
+            cursor: pointer;
+
+            transition: background-color 0.3s ease-in-out;
+
+            }
+
+            .secondary:hover {
+
+            color: black;
+
+            }
+
+            Lees verder knop:
+            .readmore{
+            color: var(--darkblue);
+            background-color: var(--blue);
+            border-radius: 50px;
+            padding: 10px 30px 10px 30px;
+            font-weight: 800;
+            border: none;
+            box-shadow: var(--grey) 0px 10px 20px, var(--darkgrey) 0px 3px 6px;
+            text-transform: uppercase;
+            }
+
+            Send knop:
+            contact-form .input-box input[type="submit"]
+
+            {
+
+            width: 100%;
+
+            background: var(--blue);
+
+            color: #ffffff;
+
+            border: none;
+
+            cursor: pointer;
+
+            padding: 10px;
+
+            font-size: 18px;
+
+            border: 1px solid var(--blue);
+
+            transition: 0.5s;
+
+            }
 
 
-    }
+            .contact-form .input-box input[type="submit"]:hover
 
-    .timelinebox{
-      display: flex;
-      flex-direction: column;
-      border-radius: 90px;
-      background-color:var(--darkwhite);
-      max-width: 100em;
-      padding: 0;
-      margin: 0  auto;
-      justify-content: center;
+            {
 
+            background: var(--white);
 
-    }
+            color:var(--blue);
 
-    .timelinecloud{
-      grid-area: timeline;
-      display: flex;
-    justify-content: center;
-      max-width: 100em;
-      position: relative;
+            }
+            </code></pre>
+        </section>
+        <!-- end of header explaining  -->
 
-    }
+        <!--artikelen explaining-->
+        <section>
+            <h3>Fonts</h3>
+            <img src="assets/images/typografie.png" alt="typografie"/>
+            <img src="assets/images/typografiekleinetekst.png" alt="typografie kleine tekst"/>
 
-    /* The actual timeline (the vertical ruler) */
-    .timeline {
-      grid-area: timeline;
+            <p>
+                Voor de body tekst van b-RAIN hebben wij gekozen voor:</br>
 
-      position: relative;
+                font-family: 'Open Sans', sans-serif;
+                font-size: 1em;
+                line-height: 1.5em;</br></br>
 
-      padding: 0;
-      margin: 0 auto;
+                Uiteraard hebben de verschillende H elementen een andere grote:</br>
 
-    }
+                H1 font-size: 3em; font-weight: 800;
+                H2 font-size: 2.3em; font-weight: 600;
+                H3 font-size: 1.8em; font-weight: 600;
+                H4 font-size: 1.4em; font-weight: 500;</br></br>
 
-          </code></pre>
-      </section>
-      <!-- end of header explaining  -->
+                De P elementen hebben de volgende instelling:</br>
 
-      <!--artikelen explaining-->
-      <section>
-        <h3>Article</h3>
-        <img src="assets/images/MicrosoftTeams-image.png" alt="screenshot van articles" />
- 
-        <h4>Wel doen</h4>
-        <p>Goed kijken naar responsive. Zorg voor duidelijkheid in de namen.
-          Ook kijken dat de kleuren overheen komen met de gehele website. Zorg ervoor dat de artikelen ten alle tijden leesbaar zijn
-            <br>
-     
-        </p>
- 
-        <h4>Niet doen</h4>
-        <p> </p>
- 
-        <!-- Om HTML in HTML te laten zien gebruik je &lt; voor de < en &gt; voor de > -->
-        <pre><code>&lt;article&gt;
-          &lt;h1&gt;Zo maak je een article&lt;/h1&gt;
-        &lt;/article&gt;
- 
-        <!--HTML-->
-      div class="article-container">
-      section class="article-box">
-         div class="article-details">
-            img src="https://upload.wikimedia.org/wikipedia/<br>commons/thumb/5/51/Facebook_f_logo_%282019%29.svg/<br>1200px-Facebook_f_logo_%282019%29.svg.png"alt="Bedrijf 3 <br>Afbeelding" <br>class=" article-img">
-            h2>"Facebook"</h2>
-            p>b-RAIN is een fantastische app!</p>
-            div class="rating-star"> ★★★☆☆</div>
-         /div>
- 
+                P font-size: 1em; font-weight: 400;</br>
+
+                De A elementen hebben de volgende instelling:</br>
+
+                P font-weight: 500; font-size: 1.1em;
+                <br>
+
+            </p>
+
+            <h4>Niet doen</h4>
+            <p></p>
+
+            <!-- Om HTML in HTML te laten zien gebruik je &lt; voor de < en &gt; voor de > -->
+            <pre><code>
 <!--CSS-->
-        .article-container {
-          display: flex;
-          flex-wrap: wrap;
-          justify-content: space-between;
-          padding: 0 100px 100px 100px;
-        }
-       
-        .article-box {
-          flex: 0 0 calc(33.33% - 20px);
-          background-color: var(--white);
-          box-shadow: 0 0 5px  var(--black);
-          border-radius: 30px;
-          margin: 10px;
-          cursor: pointer;
-          overflow: hidden;
-          transition: transform 0.3s ease-in-out;
-          text-align: center;
-       
-        }
- 
-        .article-details h2 {
-          font-size: 20px;
-          margin-bottom: 10px;
-          color: var(--black);
-        }
-   
-        .article-details p {
-          font-size: 16px;
-          line-height: 1.5;
-          margin-bottom: 10px;
-          color: var(--darkgrey)
-        }
-       
-        .rating {
-          display: flex;
-          align-items: center;
-        }
-       
-       
-       
-        .rating-star {
-          color: var(--green);
-          margin-right: 5px;
-        }
-     
-       
-        .article-img {
-          width: 75px;
-          height: 75px;
-          margin-top: 5px;
-          border-radius: 50%; /* Create a perfect circle */
-          object-fit: cover; /* Maintain aspect ratio */
-          box-shadow: 0 0 3px;
-       
-        }
- 
- 
-          </code></pre>
-      </section>
-      <!-- end of artikelen explaining -->
-      
-      <!--  Begin of footer explaining -->
-      <section>
-        <h3>footer Cloud</h3>
-        <img src="assets/images/Schermafbeelding 2023-11-15 om 11.42.29.png" alt="screenshot van header" />
-    
-        <h4>Wel doen</h4>
-        <p>Voor de footer wordt er net als bij de header/navabar worden er 4 divs gemaakt met classes deze divs creeren wolken aan de hand van de styling van de css
-        </p>
-    
-        <h4>Niet doen</h4>
-        <p>Vertel hoe dingen vooral niet toegepast moeten worden.</p>
-    
-        <!-- Om HTML in HTML te laten zien gebruik je &lt; voor de < en &gt; voor de > -->
-        <pre><code>&lt;header&gt;
-          &lt;h1&gt;Zo maak je een header&lt;/h1&gt;
-        &lt;/header&gt;
-    
-            <div class="Gcloud A1"></div>
-            <div class="Gcloud A2"></div>
-            <div class="Gcloud A3"></div>
-            <div class="Gcloud A4"></div>
-    
-            footer{
-                width: 100%;
-                background-color: var(--darkblue);
-                color: white;
-                position: sticky;
-                bottom: 0%;
-                z-index: 99;
-    }
-    
-                .Gcloud{
-                  margin-top: -40px;
-                  position: absolute;
-    
-                  background-color: var(--white);
-    
-                }
-    
-    
-                .A1{
-    
-                  height: 50px;
-    
-                  width: 40%;
-    
-                  left: -50px;
-    
-                  border-radius: 80%;
-    
-                  box-shadow: 5px 4px 2px rgba(0, 0, 0, 0.08);
-    
-    
-    
-                }
-    
-                .A2{
-    
-                  height: 95px;
-    
-                  width: 30%;
-    
-                  left: 45%;
-    
-                  border-radius: 60%;
-    
-                  box-shadow: 0 4px 2px rgba(0, 0, 0, 0.08);
-    
-    
-    
-                }
-    
-                .A3{
-    
-                  height: 60px;
-    
-                  width:30%;
-    
-                  right: 0;
-    
-                  border-radius: 100%;
-    
-                  box-shadow: 8px 4px 2px rgba(0, 0, 0, 0.04);
-    
-    
-    
-                }
-    
-                .A4{
-    
-                  height: 74px;
-    
-                  width: 35%;
-    
-                  right: 50%;
-    
-                  border-radius: 100%;
-    
-                  box-shadow: 6px 4px 2px rgba(0, 0, 0, 0.04);
-                }
-    </code></pre>
-    <h3>Footer Bottom</h3>
-        <img src="assets/images/Schermafbeelding 2023-11-15 om 11.42.29.png" alt="screenshot van header" />
-    
-        <h4>Wel doen</h4>
-        <p>Voor de footer-bottom is er een 5 de div met een class waarbij er een donker blauwe footer wordt toegevoegd onder aan de wolken.
-            Met een h1 met de inhoud B-Rain.
-        </p>
-    
-        <h4>Niet doen</h4>
-        <p>Vertel hoe dingen vooral niet toegepast moeten worden.</p>
-    
-        <!-- Om HTML in HTML te laten zien gebruik je &lt; voor de < en &gt; voor de > -->
-        <pre><code>&lt;header&gt;
-          &lt;h1&gt;Zo maak je een header&lt;/h1&gt;
-        &lt;/header&gt;
-    
-            <div class="bottom-footer">
-                <h1>B-Rain</h1>
-            </div>
-    
-        .bottom-footer{
-          max-width: 1231px !important;
-          margin: 0 auto;
-          padding: 1em 4em;
-          height: 140px;
-          display: flex;
-          align-items: center;
-        }
-          </code></pre>
+h1 {
+    font-size: 3em;
+    font-weight: 800;
+    margin: 0px;
+}
 
-    <!--  Begin of footer explaining -->
-      </section>
-    </main>
-  </body>
+            h2 {
+    display: block;
+    font-size: 1.5em;
+    margin-block-start: 0.83em;
+    margin-block-end: 0.83em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-weight: bold;
+}
+
+            h3 {
+    display: block;
+    font-size: 1.17em;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-weight: bold;
+}
+            p {
+    font-size: 1em;
+    font-weight: 400;
+    margin: 0px;
+}
+        </code></pre>
+        </section>
+        <!-- end of artikelen explaining -->
+
+        <!--  Begin of footer explaining -->
+        <section>
+            <h3>Icons</h3>
+            <img src="assets/images/icons.png" alt="icons"/>
+
+            <h4>Wel doen</h4>
+            <p>Icons Icons versterken de inhoud van de tekst, omdat ze snel en visueel informatie kunnen overbrengen. -
+                Visuele aantrekkingskracht: Iconen kunnen de visuele aantrekkingskracht van een tekst vergroten. Ze
+                trekken de aandacht van de lezer en maken de tekst meer uitnodigend. - Snelle herkenning: Iconen bieden
+                de mogelijkheid om informatie snel te herkennen en te begrijpen. Een goed gekozen icoon kan de boodschap
+                van de tekst in één oogopslag communiceren. - Universele communicatie: Veel iconen hebben wereldwijd
+                erkende betekenissen, waardoor ze een vorm van universele communicatie worden. Dit helpt bij het
+                overbruggen van taalbarrières en maakt informatie toegankelijker voor een breder publiek. Dit past goed
+                bij toegankelijkheid Bij het gebruik van iconen is het echter belangrijk om consistent te zijn en ervoor
+                te zorgen dat de betekenis ervan duidelijk is voor de doelgroep. Te veel of onduidelijke iconen kunnen
+                de leesbaarheid verminderen in plaats van versterken.
+            </p>
+            <!-- Om HTML in HTML te laten zien gebruik je &lt; voor de < en &gt; voor de > -->
+            <pre><code>&lt;class="fas fa-phone"&gt;</br>
+                .fa, .fab, .fad, .fal, .far, .fas {
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-font-smoothing: antialiased;
+    display: inline-block;
+    font-style: normal;
+    font-variant: normal;
+    text-rendering: auto;
+    line-height: 1;
+}
+</main>
+</body>
 </html>
