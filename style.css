@@ -1,6 +1,6 @@
 * {
   box-sizing: border-box;
-  margin: 0 auto ;
+  margin: 0 auto;
   padding: 0;
 }
 
@@ -10,24 +10,20 @@
 
 body {
   min-height: 100vh;
-  margin: 0 auto ;
+  margin: 0 auto;
   font-family: sans-serif;
   text-rendering: optimizeLegibility;
   font-feature-settings: 'kern' 1, 'liga' on, 'dlig' on;
   line-height: 1.5;
-
   color: DarkSlateGray;
-  background-color: silver;
-}
-
-body > * {
-  padding: 0.2rem;
+  background-color: rgb(255, 255, 255);
 }
 
 header {
-  background-color: white;
-  margin-bottom: 1rem;
-  color: silver;
+  background-color: rgb(0, 255, 255);
+  margin-bottom: 2rem;
+  color: rgb(0, 0, 0);
+  
 }
 
 header > h1 {
@@ -47,53 +43,55 @@ nav a.active {
   font-weight: bold;
 }
 
-main{
-    display: flex;
+main {
+  display: flex;
 }
 
-.chapters{
-  height: fit-content;
-  width: fit-content;
-  background-color: white;
-  border-radius: 0.2rem;
+.chapters {
+  background-color: rgb(255, 255, 255);
   position: fixed;
   padding: 20px;
   text-align: center;
-  
+  border-radius: 30px;
+  box-shadow: 5px 5px 20px 5px;
+  margin-left: 10px;
 }
 
-.chapters ul{
+.chapters ul {
   list-style-type: none;
 }
 
-.chapters ul a{
+.chapters ul a {
   text-decoration: none;
   color: black;
 }
 
-.chapters ul a:hover{
+.chapters ul a:hover {
   text-decoration: none;
   color: cyan;
 }
 
-.chapters ul h2{
+.chapters ul h2 {
   color: springgreen;
 }
 
-.styleguides{
+.styleguides {
   width: min(100%, 38rem);
-  background: white;
-  border-radius: 0.2rem;
-  padding: 0.2rem;
-  max-width: 1000px;
+  background: rgb(255, 255, 255);
+  border-radius: 1rem;
+  padding: 1rem;
+  height: fit-content;
+  width: fit-content;
+  box-shadow: 5px 5px 10px 10px;
+  margin-left: 200px;
+  margin-right: 10px;
 }
 
-code{
+code {
   font-size: 24px;
 }
 
-
-img{
+img {
   max-width: 100%;
 }
 
@@ -113,3 +111,6 @@ pre {
   color: white;
   font-size: 24px;
 }
+
+
+
